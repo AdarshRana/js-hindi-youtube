@@ -12,12 +12,12 @@ console.log(name2);  //Hitesh
 
 //use of reference data types where heap memory is created
 
-let u1=
+const u1=
  {
    email : "abc.com",
    upi : 500,
  }
-let u2=u1;
+const u2=u1;
 u2.email="cd.com";
 console.log(u1);
 console.log(u2);
