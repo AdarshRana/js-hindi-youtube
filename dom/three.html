@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code |DOM</title>
+</head>
+<body style="background-color: black;color:white">
+    <ul class="language">
+        <li> Javascript </li>
+    </ul>
+</body>
+<script>
+    function addLang(langname){
+        const li=document.createElement('li');
+        li.innerHTML=`${langname}`
+        document.querySelector('.language').          //attaching at the end 
+        appendChild(li);
+    }
+    addLang("python");
+    addLang("typescript");
+
+    //optimising the above code as in above code we have to traverse the above code
+    function addOptiLang(langName){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptiLang("react")
+
+
+
+    //edit the values example 1
+   const secLang= document.querySelector("li:nth-child(2)")
+   const newli=document.createElement('li')
+   newli.textContent="Mojo";
+   secLang.replaceWith(newli);
+
+   //edit the values example 2
+   const firstLang=document.querySelector("li:first-child")
+   firstLang.outerHTML = '<li> Typescript </li>'
+
+   //remove
+   const lastLang=document.querySelector('li:last-child')
+   lastLang.remove()
+
+
+</script>
+</html>
