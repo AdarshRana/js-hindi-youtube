@@ -1,2 +1,1 @@
-# js-hindi-youtube
-Chai aur code for javascript
+A group of Javascript projects - Digital Clock, BMI calculator, 
