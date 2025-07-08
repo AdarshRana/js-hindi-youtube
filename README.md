@@ -1,1 +1,1 @@
-A group of Javascript projects - Digital Clock, BMI calculator, 
+A group of Javascript projects - Digital Clock, BMI calculator, Color Changer
